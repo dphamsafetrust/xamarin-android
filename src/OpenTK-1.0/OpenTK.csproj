@@ -20,7 +20,6 @@
     <NoStdLib>true</NoStdLib>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AndroidApplication>false</AndroidApplication>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <Import Project="..\..\Configuration.props" />
   <Import Project="..\..\build-tools\scripts\MonoAndroidFramework.props" />
@@ -28,10 +27,10 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\$(Configuration)\lib\xbuild-frameworks\MonoAndroid\$(AndroidFrameworkVersion)</OutputPath>
+    <OutputPath>..\..\bin\Debug\lib\xbuild-frameworks\MonoAndroid\v7.1</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\bin\$(Configuration)\lib\xbuild-frameworks\MonoAndroid\$(AndroidFrameworkVersion)\OpenTK-1.0.xml</DocumentationFile>
+    <DocumentationFile>..\..\bin\Debug\lib\xbuild-frameworks\MonoAndroid\v7.1\OpenTK-1.0.xml</DocumentationFile>
     <AndroidLinkMode>None</AndroidLinkMode>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
@@ -39,10 +38,10 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\$(Configuration)\lib\xbuild-frameworks\MonoAndroid\$(AndroidFrameworkVersion)</OutputPath>
+    <OutputPath>..\..\bin\Release\lib\xbuild-frameworks\MonoAndroid\v7.1</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\bin\$(Configuration)\lib\xbuild-frameworks\MonoAndroid\$(AndroidFrameworkVersion)\OpenTK-1.0.xml</DocumentationFile>
+    <DocumentationFile>..\..\bin\Release\lib\xbuild-frameworks\MonoAndroid\v7.1\OpenTK-1.0.xml</DocumentationFile>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>

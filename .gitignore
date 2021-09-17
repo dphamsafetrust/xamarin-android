@@ -9,3 +9,13 @@ packages
 .nuget
 TestResult.xml
 TestResult-*.xml
+external/android-api-docs/
+external/apksig/
+external/debugger-libs/
+external/lz4/
+external/nrefactory/
+external/robin-map/
+external/xamarin-android-tools/
+external/dlfcn-win32/
+external/mman-win32/
+.vscode

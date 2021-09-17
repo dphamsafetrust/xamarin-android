@@ -83,7 +83,6 @@ prepare-deps:
 	$(MSBUILD) $(MSBUILD_FLAGS) build-tools/dependencies/dependencies.mdproj
 
 prepare-external: prepare-deps
-	git submodule update --init --recursive
 	nuget restore $(SOLUTION)
 	nuget restore Xamarin.Android-Tests.sln
 	(cd $(call GetPath,JavaInterop) && make prepare)
