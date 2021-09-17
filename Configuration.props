@@ -14,8 +14,8 @@
   <PropertyGroup>
     <ProductVersion>8.0.0</ProductVersion>
     <!-- *Latest* API level binding that we support; used when building src/Xamarin.Android.Build.Tasks -->
-    <AndroidLatestApiLevel Condition="'$(AndroidLatestApiLevel)' == ''">25</AndroidLatestApiLevel>
-    <AndroidLatestFrameworkVersion Condition="'$(AndroidLatestFrameworkVersion)' == ''">v7.1</AndroidLatestFrameworkVersion>
+    <AndroidLatestApiLevel Condition="'$(AndroidLatestApiLevel)' == ''">26</AndroidLatestApiLevel>
+    <AndroidLatestFrameworkVersion Condition="'$(AndroidLatestFrameworkVersion)' == ''">v8.0</AndroidLatestFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup>
     <AutoProvision Condition=" '$(AutoProvision)' == '' ">False</AutoProvision>
@@ -47,7 +47,7 @@
     <AndroidNdkDirectory>$(AndroidToolchainDirectory)\ndk</AndroidNdkDirectory>
     <AntDirectory>$(AndroidToolchainDirectory)\ant</AntDirectory>
     <AndroidSupportedHostJitAbis Condition=" '$(AndroidSupportedHostJitAbis)' == '' ">$(HostOS)</AndroidSupportedHostJitAbis>
-    <AndroidSupportedTargetJitAbis Condition=" '$(AndroidSupportedTargetJitAbis)' == '' ">armeabi-v7a:x86</AndroidSupportedTargetJitAbis>
+    <AndroidSupportedTargetJitAbis Condition=" '$(AndroidSupportedTargetJitAbis)' == '' ">armeabi-v7a:x86:arm64-v8a:armeabi:x86_64</AndroidSupportedTargetJitAbis>
     <JavaInteropSourceDirectory Condition=" '$(JavaInteropSourceDirectory)' == '' ">$(MSBuildThisFileDirectory)external\Java.Interop</JavaInteropSourceDirectory>
     <LlvmSourceDirectory Condition=" '$(LlvmSourceDirectory)' == '' ">$(MSBuildThisFileDirectory)external\llvm</LlvmSourceDirectory>
     <MonoSourceDirectory>$(MSBuildThisFileDirectory)external\mono</MonoSourceDirectory>
