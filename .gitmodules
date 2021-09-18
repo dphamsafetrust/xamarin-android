@@ -1,7 +1,7 @@
 [submodule "external/Java.Interop"]
     path = external/Java.Interop
     url = https://github.com/dphamsafetrust/java.interop.git
-    branch = d15-4
+    branch = android.8.0.0.37
 [submodule "external/libzip"]
     path = external/libzip
     url = https://github.com/nih-at/libzip.git
@@ -21,7 +21,7 @@
 [submodule "external/mono"]
     path = external/mono
     url = https://github.com/dphamsafetrust/mono.git
-    branch = d15-4-2017-04
+    branch = android.8.0.0.37
 [submodule "external/mxe"]
     path = external/mxe
     url = https://github.com/xamarin/mxe.git

@@ -123,11 +123,6 @@ framework-assemblies:
 			/p:AndroidApiLevel=$(firstword $(API_LEVELS)) /p:AndroidPlatformId=$(word $(firstword $(API_LEVELS)), $(ALL_PLATFORM_IDS)) /p:AndroidFrameworkVersion=$(firstword $(FRAMEWORKS)); )
 
 opentk-jcw:
-	$(foreach a, $(API_LEVELS), \
-		$(foreach conf, $(CONFIGURATIONS), \
-			touch bin/$(conf)/lib/xbuild-frameworks/MonoAndroid/*/OpenTK-1.0.dll; \
-			$(MSBUILD) $(MSBUILD_FLAGS) src/OpenTK-1.0/OpenTK.csproj /t:GenerateJavaCallableWrappers /p:Configuration=$(conf) $(_MSBUILD_ARGS) \
-				/p:AndroidApiLevel=$(a) /p:AndroidPlatformId=$(word $(a), $(ALL_PLATFORM_IDS)) /p:AndroidFrameworkVersion=$(word $(a), $(ALL_FRAMEWORKS)); ))
 
 _BUNDLE_ZIPS_INCLUDE  = \
 	$(ZIP_OUTPUT_BASENAME)/bin/Debug \
