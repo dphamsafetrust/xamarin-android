@@ -3,7 +3,7 @@ export OS_ARCH       := $(shell uname -m)
 export NO_SUDO ?= false
 V             ?= 0
 prefix				= /usr/local
-CONFIGURATION = Release
+CONFIGURATION = Debug
 RUNTIME       := $(shell if [ -f "`which mono64`" ] ; then echo mono64 ; else echo mono; fi) --debug=casts
 SOLUTION      = Xamarin.Android.sln
 
