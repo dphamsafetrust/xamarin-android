@@ -49,7 +49,7 @@
     <AndroidNdkDirectory>$(AndroidToolchainDirectory)\ndk</AndroidNdkDirectory>
     <AntDirectory>$(AndroidToolchainDirectory)\ant</AntDirectory>
     <AndroidSupportedHostJitAbis Condition=" '$(AndroidSupportedHostJitAbis)' == '' ">$(HostOS)</AndroidSupportedHostJitAbis>
-    <AndroidSupportedTargetJitAbis Condition=" '$(AndroidSupportedTargetJitAbis)' == '' ">armeabi-v7a:x86</AndroidSupportedTargetJitAbis>
+    <AndroidSupportedTargetJitAbis Condition=" '$(AndroidSupportedTargetJitAbis)' == '' ">armeabi-v7a:x86:arm64-v8a:armeabi:x86_64</AndroidSupportedTargetJitAbis>
     <JavaInteropSourceDirectory Condition=" '$(JavaInteropSourceDirectory)' == '' ">$(MSBuildThisFileDirectory)external\Java.Interop</JavaInteropSourceDirectory>
     <LlvmSourceDirectory Condition=" '$(LlvmSourceDirectory)' == '' ">$(MSBuildThisFileDirectory)external\llvm</LlvmSourceDirectory>
     <MonoSourceDirectory>$(MSBuildThisFileDirectory)external\mono</MonoSourceDirectory>
